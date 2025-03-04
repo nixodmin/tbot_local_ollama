@@ -4,7 +4,7 @@
 
 AMD Ryzen 7 2700U (4с/8t)
 
-RAM DDR4 16 ГБ (8x2)
+RAM DDR4 16 ГБ (8x2) из которых доступно 14 (2 под видеопамять)
 
 SSD NVME 256 ГБ
 
@@ -167,6 +167,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     # Подготовка данных для запроса к Ollama
     api_data = {
         "model": MODEL,
+        "keep_alive": -1,
         "prompt": full_prompt,
         "max_tokens": 500,
         "temperature": 0.7
