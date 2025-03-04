@@ -32,6 +32,11 @@ sudo systemctl start ollama
 
 Я выбрал https://ollama.com/library/deepseek-r1:14b
 
+Кстати, вот пример нагрузки этой модели на мой мини-ПК
+![нагрузка в htop](https://github.com/user-attachments/assets/3af22604-006b-4a47-9611-30b0c8ba9b76)
+
+
+
 Чтобы загрузить модель на сервер, я использовал команду
 
 ```
