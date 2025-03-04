@@ -45,6 +45,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     # Подготовка данных для запроса к Ollama
     api_data = {
         "model": MODEL,
+        "keep_alive": -1,
         "prompt": full_prompt,
         "max_tokens": 500,
         "temperature": 0.7
